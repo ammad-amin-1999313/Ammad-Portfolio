@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+/* font fire code */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Sofia+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.font-family{
+    font-family: "Fira Code", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #282c33;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* custom layout */
+.size {
+    width: 1000px;
+    margin: 0 auto;
+}
+/* word spacing */
+.spaced-words {
+    word-spacing: 7px; /* Adjust this value as needed */
+}
+/* Define the transition for the background color --------- common large button--------- */
+.hover-bg-transition {
+    transition: background-color 0.3s ease; /* Adjust the duration and timing function as needed */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Define the hover effect */
+  .hover-bg-transition:hover {
+    background-color: #49334f; /* Change the background color on hover --------common large button----------- */
   }
-  to {
-    transform: rotate(360deg);
+  /* projects line custom */
+  .line {
+    width: 538px; /* Adjust the width as needed */
+    border-top: 1px solid #C778DD; /* Add a border style to create the line */
   }
-}
+  /* skils line */
+  .line-skills {
+    width: 310px; /* Adjust the width as needed */
+    border-top: 1px solid #C778DD; /* Add a border style to create the line */
+  }
+  /* project cards transform */
+  .cards:hover {
+    transform: scale(1.13);
+   
+  }
+  /* ---------- skills*/
+  .skill-hover:hover{
+    border-color:#C778DD;
+  }
+  .skill-hover:hover h1{
+    border-color:#C778DD;
+  }
+  .skill-hover:hover {
+    transform: scale(1.08);
+  }
