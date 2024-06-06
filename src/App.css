@@ -11,7 +11,7 @@ body{
 }
 /* custom layout */
 .size {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 /* word spacing */
@@ -37,6 +37,14 @@ body{
     width: 310px; /* Adjust the width as needed */
     border-top: 1px solid #C778DD; /* Add a border style to create the line */
   }
+  .line-skills-about {
+    width: 360px; /* Adjust the width as needed */
+    border-top: 1px solid #C778DD; /* Add a border style to create the line */
+  }
+  .line-skills-contact {
+    width: 190px; /* Adjust the width as needed */
+    border-top: 1px solid #C778DD; /* Add a border style to create the line */
+  }
   /* project cards transform */
   .cards:hover {
     transform: scale(1.13);
@@ -52,3 +60,37 @@ body{
   .skill-hover:hover {
     transform: scale(1.08);
   }
+
+  /* nav */
+  .nav-item {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #C778DD;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .nav-item:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .nav-item:hover {
+    color: white;
+  }
+  
+  .nav-item span {
+    color: #c778dd;
+  }
+  

@@ -1,7 +1,6 @@
 import React from 'react'
 import card01 from '../../../assets/images/card01.jpg'
 import card03 from '../../../assets/images/card03.png'
-import LargeButton from '../Buttons/LargeButton'
 import SmallButton from '../Buttons/SmallButton'
 import { AiOutlineDeliveredProcedure } from "react-icons/ai";
 
@@ -46,7 +45,7 @@ const Card = () => {
   <div className='w-[28%] cards   border-2 mb-6 border-white transition-all duration-500 ease-in-out hover:duration-500 hover:ease-in-out hover:border-2 hover:border-[#C778DD] '  key={project.id} >
     <img src={project.image} alt="" />
     <h2 className='border-b-[1px] px-2 py-2' >{project.tools.join("  ")}</h2>
-    <h2 className='py-3 px-4 text-2xl font-500'>{wordSize(project.name,15)}</h2>
+    <h2 className='py-3 px-4 text-2xl font-medium'>{wordSize(project.name,15)}</h2>
     <p className='px-4'>{project.about}</p>
     <div className='flex gap-4 px-4 py-4'>
       <SmallButton  className={'border-2 border-[#C778DD] hover-bg-transition flex items-center gap-2'}>Live <AiOutlineDeliveredProcedure/> </SmallButton>

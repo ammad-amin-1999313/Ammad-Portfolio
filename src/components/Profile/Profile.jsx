@@ -8,14 +8,14 @@ const Profile = () => {
     <div>
       <div className="flex size justify-between py-10 ">
         <div className="w-[40%] pt-[75px]">
-          <h1 className="text-[32px] font-medium font-[font-family] text-white pb-6">
+          <h1 className="text-[32px] font-semibold font-family text-white pb-6">
             Elias is a <span className="text-[#C778DD]">web designer</span> and{" "}
             <span className="text-[#C778DD]">front-end developer</span>
           </h1>
-          <p className="text-[16px] font-normal w-[90%] text-[#ABB2BF] pb-6">
+          <p className="text-[16px] font-normal font-family w-[90%] text-[#ABB2BF] pb-6">
             He crafts responsive websites where technologies meet creativity
           </p>
-          <LargeButton className={'spaced-words hover-bg-transition'} >Contact me!!</LargeButton>
+          <LargeButton className={'spaced-words font-family font-medium hover-bg-transition'} >Contact me!!</LargeButton>
         </div>
         <div>
           <img src={profile} alt="" />
@@ -25,7 +25,7 @@ const Profile = () => {
               {" "}
               <img src={colorImage} alt="" />{" "}
             </span>{" "}
-            <p className="text-[#ABB2BF] spaced-words text-[18px]" >Currently working on <strong className="text-white" >Portfolio</strong> </p>
+            <p className="text-[#ABB2BF] spaced-words font-family text-[18px]" >Currently working on <strong className="text-white" >Portfolio</strong> </p>
           </div>
         </div>
       </div>
