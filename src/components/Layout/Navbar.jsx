@@ -1,5 +1,5 @@
 import React from "react";
-import navItems from "../../utils/commonItems";
+import {navItems} from "../../utils/commonItems";
 import logo from "../../assets/images/portfolio-logo.png";
 import { Link } from "react-router-dom";
 

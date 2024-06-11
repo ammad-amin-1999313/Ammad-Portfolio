@@ -2,10 +2,12 @@ import React from "react";
 import skillframe from "../assets/images/project-icon.png";
 import abouticon from "../assets/images/aboutGroup.png";
 import skills from "../components/Common/Skill/SkillsData";
-import skillicon from '../assets/images/skills-frame.png'
+import skillicon from "../assets/images/skills-frame.png";
+import { funFact } from "../utils/commonItems";
+import abouticons from '../assets/images/aboutpage.png'
 const About = () => {
   return (
-    <div className="relative">
+    <div className="relative pt-10">
       <div className="absolute top-40 right-0">
         <img src={skillframe} alt="" />
       </div>
@@ -51,25 +53,61 @@ const About = () => {
         </div>
         {/* ----------------- */}
         <div className="text-[32px] py-10 flex font-medium  text-white">
-              <span className="text-[#C778DD]">#</span>{" "}
-              <h1 className="font-family">skills</h1>
+          <span className="text-[#C778DD]">#</span>{" "}
+          <h1 className="font-family">skills</h1>
+        </div>
+        {/* ----------- */}
+        <div className="flex flex-wrap gap-4 pb-10 ">
+          {skills.map((skill, index) => (
+            <div
+              className="border-[1px] font-family  w-[30%] h-[100px]"
+              key={index}
+            >
+              <h1 className="border-b font-semibold  text-white pl-2">
+                {skill.name}
+              </h1>
+              <h1 className="px-2 text-gray-400 ">{skill.paragraph}</h1>
             </div>
-            {/* ----------- */}
-            <div className="flex flex-wrap gap-4 pb-10 " >
-                {skills.map((skill,index) => (
-                    <div className="border-[1px] font-family  w-[30%] h-[100px]" key={index} >
-                        <h1 className="border-b font-semibold  text-white pl-2" >{skill.name}</h1>
-                        <h1 className="px-2 text-gray-400 " >{skill.paragraph}</h1>
-                    </div>
-                ))}
-            </div>
-            {/* --------- */}
-            <div>
-            <div className="text-[32px] py-10 flex font-medium  text-white">
+          ))}
+        </div>
+        {/* --------- */}
+        <div>
+          <div className="text-[32px] py-10  font-medium  text-white">
+            <div className="flex">
               <span className="text-[#C778DD]">#</span>{" "}
               <h1 className="font-family">my-fun-facts</h1>
             </div>
+
+           <div className="flex font-family justify-between pb-10">
+           <div className="w-[80%] gap-4 flex mt-10 flex-wrap">
+              <p className="text-[18px] text-gray-400 w-[38%] py-1 px-[6px] border-2 border-[#abb2bf]">
+                {funFact[0].fun}
+              </p>
+              <p className="text-[18px] text-gray-400 w-[34%] py-1 px-[6px] border-[#abb2bf]  border-2">
+                {funFact[1].fun}
+              </p>
+              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] w-[27%]">
+                {funFact[2].fun}
+              </p>
+              <p className="text-[18px] text-gray-400 border-2 w-[41%] py-1 border-[#abb2bf] px-[6px]">
+                {funFact[3].fun}
+              </p>
+              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] w-[44%]">
+                {funFact[4].fun}
+              </p>
+              <p className="border-2 text-gray-400 text-[18px] w-[27%] py-1 border-[#abb2bf] px-[6px]">
+                {funFact[5].fun}
+              </p>
+              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] w-[33%]">
+                {funFact[6].fun}
+              </p>
             </div>
+            <div className=" mt-10 mr-20">
+              <img src={abouticons} alt="" />
+            </div>
+           </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ body{
     border-color:#C778DD;
   }
   .skill-hover:hover {
-    transform: scale(1.08);
+    transform: scale(0.1);
   }
 
   /* nav */

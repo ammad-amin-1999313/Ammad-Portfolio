@@ -13,11 +13,11 @@ const Contacts = () => {
       };
   return (
     <div>
-    <div className='size pb-10 pt-4' >
+    <div className='size pb-24 pt-4' >
     <div className="flex items-center gap-4">
           <div>
             <div className="text-[32px] flex font-medium  text-white">
-              <span className="text-[#C778DD]">#</span>{" "}
+              <span className=" font-family text-[#C778DD]">#</span>{" "}
               <h1 className="font-[font-family]">Contacts</h1>
             </div>
           </div>

@@ -3,11 +3,10 @@ import logo from "../../assets/images/portfolio-logo.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="border-t-2">
+    <div className="border-t-2  ">
       <div className="size flex justify-between py-8">
         <div>
           <div className="flex items-center text-white gap-2">

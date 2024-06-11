@@ -5,7 +5,7 @@ import skillframe from '../../assets/images/skills-frame.png'
 
 const AboutMe = () => {
   return (
-    <div className='relative'>
+    <div className='relative pt-4'>
     <div className='absolute bottom-40 right-0'>
     <img src={skillframe} alt="" />
   </div>
