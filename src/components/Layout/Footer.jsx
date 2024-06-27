@@ -6,8 +6,9 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="border-t-2  ">
-      <div className="size flex justify-between py-8">
+    <div className="lg:border-t-2 px-6 md:px-20 lg:px-0 ">
+      <div className="size flex flex-col lg:flex-row justify-between py-8">
+      {/* ----------- */}
         <div>
           <div className="flex items-center text-white gap-2">
             <img src={logo} alt="logo" />
@@ -19,7 +20,8 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="text-white">
+        {/* ------------ */}
+        <div className="text-white pt-4 lg:pt-0">
           <h1 className="text-[24px] font-medium pb-2 font-family">Media</h1>
           <div className="flex gap-5">
             <div>
@@ -44,8 +46,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* ----------- */}
       <div>
-        <p className="font-family text-white size text-center pb-8" >© Copyright 2023. Made by Ammad</p>
+        <p className="font-family text-white lg:size text-center pb-8" >© Copyright 2023. Made by Ammad</p>
       </div>
     </div>
   );

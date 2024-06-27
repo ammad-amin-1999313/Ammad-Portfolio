@@ -37,13 +37,13 @@ const Card = () => {
     }
   }
   return (
-    <div  className=' flex flex-wrap pt-8 justify-between text-white' >
+    <div  className='flex flex-col lg:flex-row lg:flex-wrap pt-8 justify-between text-white' >
 
 
 
 {projectsData.map((project,id)=>(
-  <div className='w-[28%] cards   border-2 mb-6 border-white transition-all duration-500 ease-in-out hover:duration-500 hover:ease-in-out hover:border-2 hover:border-[#C778DD] '  key={project.id} >
-    <img src={project.image} alt="" />
+  <div className='lg:w-[28%] cards   border-2 mb-6 border-white transition-all duration-500 ease-in-out hover:duration-500 hover:ease-in-out hover:border-2 hover:border-[#C778DD] '  key={project.id} >
+    <img className='w-full' src={project.image} alt="" />
     <h2 className='border-b-[1px] px-2 py-2' >{project.tools.join("  ")}</h2>
     <h2 className='py-3 px-4 text-2xl font-medium'>{wordSize(project.name,15)}</h2>
     <p className='px-4'>{project.about}</p>
