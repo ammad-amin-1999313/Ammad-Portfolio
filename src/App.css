@@ -47,7 +47,8 @@ body{
   }
   /* project cards transform */
   .cards:hover {
-    transform: scale(1.13);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 2px #7070aa;
    
   }
   /* ---------- skills*/

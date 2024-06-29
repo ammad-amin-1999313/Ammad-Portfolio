@@ -66,7 +66,7 @@ const About = () => {
               <h1 className="border-b font-semibold  text-white pl-2">
                 {skill.name}
               </h1>
-              <h1 className="px-2 text-gray-400 ">{skill.paragraph}</h1>
+              <h1 className="px-2 pt-4  text-gray-400 ">{skill.paragraph}</h1>
             </div>
           ))}
         </div>
