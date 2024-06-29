@@ -4,8 +4,8 @@ import icon from '../assets/images/project-icon.png'
 
 const Project = () => {
   return (
-    <div className="relative ">
-    <div className='absolute top-20 right-0'>
+    <div className="relative px-6 md:px-20 xl:px-0 ">
+    <div className='absolute hidden xl:block top-20 right-0'>
     <img src={icon} alt="" />
   </div>
     <div className=" size font-family pt-10 pb-24">

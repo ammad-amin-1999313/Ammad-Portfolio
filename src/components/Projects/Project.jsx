@@ -7,10 +7,10 @@ import icon from "../../assets/images/project-icon.png";
 const Project = () => {
   return (
     <div className="relative">
-      <div className="absolute hidden lg:block bottom-40 right-0">
+      <div className="absolute hidden xl:block bottom-40 right-0">
         <img src={icon} alt="" />
       </div>
-      <div className=" size font-family px-6 md:px-20  lg:px-0 py-10">
+      <div className=" size font-family px-6 md:px-20  xl:px-0 py-10">
         <div className="flex justify-between">
           <div className=" items-center gap-4">
             <div>
@@ -19,7 +19,7 @@ const Project = () => {
                 <h1 className="font-[font-family]">projects</h1>
               </div>
             </div>
-            <div className="line hidden lg:block mt-2"></div>
+            <div className="line hidden xl:block mt-2"></div>
           </div>
           <div
             style={{ borderRadius: "5px" }}

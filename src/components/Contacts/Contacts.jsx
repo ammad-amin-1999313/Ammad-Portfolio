@@ -13,7 +13,7 @@ const Contacts = () => {
       };
   return (
     <div>
-    <div className='size px-6 md:px-20 lg:px-0 pb-12 lg:pb-24 pt-4' >
+    <div className='size px-6 md:px-20 xl:px-0 pb-12 xl:pb-24 pt-4' >
     <div className="flex items-center gap-4">
           <div>
             <div className="text-[32px] flex font-medium  text-white">
@@ -21,7 +21,7 @@ const Contacts = () => {
               <h1 className="font-[font-family]">Contacts</h1>
             </div>
           </div>
-          <div className="line-skills-contact hidden lg:block mt-2"></div>
+          <div className="line-skills-contact hidden xl:block mt-2"></div>
         </div>
         {/* ------------- */}
         <div className='text-gray-400 flex flex-col lg:flex-row justify-between'>
@@ -30,7 +30,7 @@ const Contacts = () => {
                 I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
                 </p>
             </div>
-            <div className='border-[1px] mt-8 lg:mt-0 font-family rounded transition-all duration-500 ease-in-out hover:border-[#C778DD] hover:transition-all hover:duration-500 hover:ease-in-out p-4 '>
+            <div className='border-[1px] mt-8 xl:mt-0 font-family rounded transition-all duration-500 ease-in-out hover:border-[#C778DD] hover:transition-all hover:duration-500 hover:ease-in-out p-4 '>
                 <h4 className='text-white'>Message me here</h4>
                 <span 
               className='flex gap-2 items-center pt-3 pb-2 cursor-pointer' 

@@ -7,8 +7,8 @@ import { funFact } from "../utils/commonItems";
 import abouticons from '../assets/images/aboutpage.png'
 const About = () => {
   return (
-    <div className="relative pt-10">
-      <div className="absolute top-40 right-0">
+    <div className="relative px-6 md:px-20 xl:px-0 pt-10">
+      <div className="absolute hidden xl:block top-40 right-0">
         <img src={skillframe} alt="" />
       </div>
       <div className="absolute bottom-20 right-0">
@@ -26,8 +26,8 @@ const About = () => {
         </div>
         {/* ---------- */}
         <div className="pt-14">
-          <div className="flex justify-between pb-10">
-            <div className="text-gray-400  w-[52%] ">
+          <div className="flex flex-col lg:flex-row justify-between pb-10">
+            <div className="text-gray-400  lg:w-[52%] ">
               <p className="pt-6 font-family" style={{ lineHeight: "26px" }}>
                 Hello, i’m Ammad!
               </p>
@@ -46,7 +46,7 @@ const About = () => {
                 learn about the newest technologies and frameworks.
               </p>
             </div>
-            <div className="mt-[-42px]">
+            <div className="lg:mt-[-42px]">
               <img src={abouticon} alt="" />
             </div>
           </div>
@@ -60,7 +60,7 @@ const About = () => {
         <div className="flex flex-wrap gap-4 pb-10 ">
           {skills.map((skill, index) => (
             <div
-              className="border-[1px] font-family  w-[30%] h-[100px]"
+              className="border-[1px] font-family   lg:w-[30%] h-[80px] lg:h-[100px]"
               key={index}
             >
               <h1 className="border-b font-semibold  text-white pl-2">
@@ -78,31 +78,31 @@ const About = () => {
               <h1 className="font-family">my-fun-facts</h1>
             </div>
 
-           <div className="flex font-family justify-between pb-10">
-           <div className="w-[80%] gap-4 flex mt-10 flex-wrap">
-              <p className="text-[18px] text-gray-400 w-[38%] py-1 px-[6px] border-2 border-[#abb2bf]">
+           <div className="flex-col lg:flex-row  font-family justify-between pb-10">
+           <div className="lg:w-[80%] gap-4 flex mt-10 flex-wrap">
+              <p className="text-[18px] text-gray-400 lg:w-[38%] py-1 px-[6px] border-2 border-[#abb2bf]">
                 {funFact[0].fun}
               </p>
-              <p className="text-[18px] text-gray-400 w-[34%] py-1 px-[6px] border-[#abb2bf]  border-2">
+              <p className="text-[18px] text-gray-400 lg:w-[34%] py-1 px-[6px] border-[#abb2bf]  border-2">
                 {funFact[1].fun}
               </p>
-              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] w-[27%]">
+              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] lg:w-[27%]">
                 {funFact[2].fun}
               </p>
-              <p className="text-[18px] text-gray-400 border-2 w-[41%] py-1 border-[#abb2bf] px-[6px]">
+              <p className="text-[18px] text-gray-400 border-2 lg:w-[41%] py-1 border-[#abb2bf] px-[6px]">
                 {funFact[3].fun}
               </p>
-              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] w-[44%]">
+              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] lg:w-[44%]">
                 {funFact[4].fun}
               </p>
-              <p className="border-2 text-gray-400 text-[18px] w-[27%] py-1 border-[#abb2bf] px-[6px]">
+              <p className="border-2 text-gray-400 text-[18px] lg:w-[27%] py-1 border-[#abb2bf] px-[6px]">
                 {funFact[5].fun}
               </p>
-              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] w-[33%]">
+              <p className="text-[18px] text-gray-400 border-2 py-1 px-[6px] border-[#abb2bf] lg:w-[33%]">
                 {funFact[6].fun}
               </p>
             </div>
-            <div className=" mt-10 mr-20">
+            <div className="  mt-10 mr-20">
               <img src={abouticons} alt="" />
             </div>
            </div>

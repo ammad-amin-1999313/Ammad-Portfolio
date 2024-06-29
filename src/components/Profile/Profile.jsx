@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 const Profile = () => {
   return (
     <div>
-      <div className="lg:flex size lg:justify-between lg:py-10 ">
-        <div className=" w-full px-6 md:px-20 lg:px-0 pb-4 lg:pb-0 lg:w-[40%] lg:pt-[75px]">
+      <div className="xl:flex size xl:justify-between xl:py-10 ">
+        <div className=" w-full px-6 md:px-20 xl:px-0 pb-4 xl:pb-0 xl:w-[40%] xl:pt-[75px]">
           <h1 className="text-[32px] font-semibold font-family text-white pb-6">
             Ammad is a <span className="text-[#C778DD]">web designer</span> and{" "}
             <span className="text-[#C778DD]">front-end developer</span>
           </h1>
-          <p className="text-[16px] font-normal font-family lg:w-[90%] text-[#ABB2BF] pb-6">
+          <p className="text-[16px] font-normal font-family xl:w-[90%] text-[#ABB2BF] pb-6">
             He crafts responsive websites where technologies meet creativity
           </p>
           <Link to='/contact'>
@@ -26,9 +26,9 @@ const Profile = () => {
             </LargeButton>
           </Link>
         </div>
-        <div className="px-6 md:px-20 lg:px-0">
+        <div className="px-6 md:px-20 xl:px-0">
           <img className="" src={profile} alt="" />
-          <div className="flex gap-3 items-center border-2 border-[#abb2bf] px-4 lg:px-0 lg:ml-10 lg:pl-2 lg:py-[6px]  lg:w-[84%] ">
+          <div className="flex gap-3 items-center border-2 border-[#abb2bf] px-4 xl:px-0 xl:ml-10 xl:pl-2 xl:py-[6px] lg:w-[60%]  xl:w-[84%] ">
             {" "}
             <span>
               {" "}

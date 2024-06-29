@@ -14,7 +14,7 @@ const Navbar = () => {
   };
   return (
     <div className="relative">
-      <div className="size px-6 md:px-20 lg:px-0 py-4 lg:py-8">
+      <div className="size px-6 md:px-20 xl:px-0 py-4 xl:py-8">
         <div className="flex justify-between items-center font-family text-white">
           <div>
             <div className="flex items-center gap-2">
@@ -22,7 +22,7 @@ const Navbar = () => {
               <p className="uppercase font-semibold">Ammad</p>
             </div>
           </div>
-          <div className=" hidden lg:flex lg:justify-between lg:gap-8 lg:text-white">
+          <div className=" hidden xl:flex xl:justify-between xl:gap-8 xl:text-white">
             {navItems.map((item, index) => (
               <div key={index} className=" nav-item   border-transparent hover:border-[#C778DD] text-gray-400 hover:text-white">
                 <Link to={item.link}>
@@ -32,7 +32,7 @@ const Navbar = () => {
               </div>
             ))}
           </div>
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
         </div>

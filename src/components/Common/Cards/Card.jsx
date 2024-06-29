@@ -42,7 +42,7 @@ const Card = () => {
 
 
 {projectsData.map((project,id)=>(
-  <div className='lg:w-[28%] cards   border-2 mb-6 border-white transition-all duration-500 ease-in-out hover:duration-500 hover:ease-in-out hover:border-2 hover:border-[#C778DD] '  key={project.id} >
+  <div className='xl:w-[28%] cards   border-2 mb-6 border-white transition-all duration-500 ease-in-out hover:duration-500 hover:ease-in-out hover:border-2 hover:border-[#C778DD] '  key={project.id} >
     <img className='w-full' src={project.image} alt="" />
     <h2 className='border-b-[1px] px-2 py-2' >{project.tools.join("  ")}</h2>
     <h2 className='py-3 px-4 text-2xl font-medium'>{wordSize(project.name,15)}</h2>
