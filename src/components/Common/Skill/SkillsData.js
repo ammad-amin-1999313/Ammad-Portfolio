@@ -1,22 +1,22 @@
 const skills=[{
     name: "Languages",
-    paragraph: "TypeScript  Node JavaScript",
+    paragraph: "HTML CSS SCSS JS TypeScript",
 },
 {
     name: "Databases",
-    paragraph:"SQLite Postgre SQL Mongo"
+    paragraph:"SQLite Postgre SQL MongoDB"
 },
 {
     name: "Tools",
-    paragraph:"VSCode Figma PostMan Versal Netlify"
+    paragraph:"VSCode Figma PostMan Versal Netlify GitHub"
 },
 {
     name:"Frameworks",
-    paragraph:"React Vue Next Express Gatsby"
+    paragraph:"React Vue Next Node Express Redux Tailwind CSS"
 },
 {
     name:"Other",
-    paragraph:"HTML CSS SCSS REST"
+    paragraph:"Responsive Design  Testing"
 }
 ]
 export default  skills

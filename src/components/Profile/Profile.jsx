@@ -11,12 +11,12 @@ const Profile = () => {
         <div className=" w-full px-6 md:px-20 xl:px-0 pb-4 xl:pb-0 xl:w-[40%] xl:pt-[75px]">
           <h1 className="text-[32px] font-semibold font-family text-white pb-6">
             Ammad is a <span className="text-[#C778DD]">web designer</span> and{" "}
-            <span className="text-[#C778DD]">front-end developer</span>
+            <span className="text-[#C778DD]">Web developer</span>
           </h1>
           <p className="text-[16px] font-normal font-family xl:w-[90%] text-[#ABB2BF] pb-6">
             He crafts responsive websites where technologies meet creativity
           </p>
-          <Link to='/contact'>
+          <Link to="/contact">
             <LargeButton
               className={
                 "spaced-words font-family font-medium hover-bg-transition"

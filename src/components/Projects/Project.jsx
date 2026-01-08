@@ -4,7 +4,7 @@ import Card from "../Common/Cards/Card";
 import { Link } from "react-router-dom";
 import icon from "../../assets/images/project-icon.png";
 
-const Project = () => {
+const Project = ({type}) => {
   return (
     <div className="relative">
       <div className="absolute hidden xl:block bottom-40 right-0">
@@ -33,7 +33,7 @@ const Project = () => {
         </div>
         {/* ---------------projects */}
         <div>
-          <Card />
+          <Card onpage={type} />
         </div>
       </div>
     </div>

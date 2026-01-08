@@ -23,7 +23,7 @@ const Project = () => {
       </div>
       {/* ---------------projects */}
       <div>
-      <Card/>
+      <Card />
       </div>
     </div>
     </div>

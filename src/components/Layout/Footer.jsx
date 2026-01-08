@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-white font-family pt-3">
-              Web designer and front-end developer
+              Web designer and web developer
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
       {/* ----------- */}
       <div>
-        <p className="font-family text-white xl:size text-center pb-8" >© Copyright 2023. Made by Ammad</p>
+        <p className="font-family text-white xl:size text-center pb-8" >© Copyright 2026. Made by Ammad</p>
       </div>
     </div>
   );
