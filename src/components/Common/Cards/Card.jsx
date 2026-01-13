@@ -1,7 +1,11 @@
 import React from "react";
-import card01 from "../../../assets/images/card01.jpg";
+// import card01 from "../../../assets/images/card01.jpg";
 import card03 from "../../../assets/images/card03.png";
 import carAdviser_logo from "../../../assets/images/car_advisers.webp";
+import imagen_logo from "../../../assets/images/imagen_logo.jpg"
+import urban_skillet_logo from "../../../assets/images/urban_skillet_logo.jpg"
+import ball_cntrl_logo from "../../../assets/images/ball-contrl-logo.jpg"
+import dashborad from "../../../assets/images/admin-dash-board.png"
 import SmallButton from "../Buttons/SmallButton";
 import { AiOutlineDeliveredProcedure } from "react-icons/ai";
 
@@ -10,37 +14,51 @@ const projectsData = [
     id: 1,
     image: carAdviser_logo,
     name: "CAR ADVISERS",
-    tools: ["NEXTJS", "TypeScript", "RTK", "AWS"],
+    tools: ["NEXT", "TypeScript", "RTK", "AWS"],
     about: "CAR ADVISERS – PAKISTAN’S LARGEST AUTOMOBILE MARKETPLACE",
     link: "https://www.caradvisers.com/",
     code: null,
+    type:"large"
   },
   {
     id: 2,
-    image: card03,
-    name: "ProtectX",
-    tools: ["HTML", "SCSS", "Python", "React"],
-    about: "Discord anti-crash bot",
+    image: imagen_logo,
+    name: "Imagen Network",
+    tools: ["REACT", "JS", "MetaMask", "AI", "TailwindCSS"],
+    about: "AI-powered social platform built for the Web3 era",
     link: "https://imagen.network/",
-    code: "https://github.com/username/protectx",
+    code:null,
+    type:"large"
   },
   {
     id: 3,
-    name: "Kahoot Answers Viewer",
-    image: card03,
-    tools: ["HTML", "SCSS", "Python", "React"],
-    about: "Get answers to your kahoot quiz",
-    link: "https://example.com/kahoot",
+    name: "Ball Cntrl",
+    image: ball_cntrl_logo,
+    tools: ["REACT", "TailwindCSS", "Stripe",],
+    about: "Women’s and girls’ football in England",
+    link: "https://ballcontrl.com/",
     code: null,
+    type:"large"
   },
   {
     id: 4,
-    name: "Kahoot Answers Viewer",
-    image: card03,
-    tools: ["HTML", "SCSS", "Python", "React"],
-    about: "Get answers to your kahoot quiz",
+    name: "Urban Skillet",
+    image: urban_skillet_logo,
+    tools: ["REACT", "JS", "CSS", "CMS"],
+    about: "Halal burger restaurants in California",
     link: "https://example.com/kahoot",
     code: null,
+    type:"large"
+  },
+  {
+    id: 5,
+    name: "Admin DashBoard",
+    image: dashborad,
+    tools: ["REACT", "JS", "CSS", "CMS"],
+    about: "Admin Dashboard for bussniess management",
+    link: "https://admin-dash-board-blue.vercel.app/",
+    code: "https://github.com/ammad-amin-1999313/admin-dash-board",
+    type:"large"
   },
 ];
 
