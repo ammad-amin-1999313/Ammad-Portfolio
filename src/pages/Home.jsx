@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Profile/>
       <Qoute/>
-      <Project type="home" />
+      <Project type="home" width={"small"} />
       <Skills/>
       <AboutMe/>
       <Contacts/>

@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../components/Common/Cards/Card'
 import icon from '../assets/images/project-icon.png'
 
-const Project = () => {
+const Project = ({width}) => {
   return (
     <div className="relative px-6 md:px-20 xl:px-0 ">
     <div className='absolute hidden xl:block top-20 right-0'>
@@ -23,7 +23,7 @@ const Project = () => {
       </div>
       {/* ---------------projects */}
       <div>
-      <Card />
+      <Card onpage="projects" layout={width} />
       </div>
     </div>
     </div>
