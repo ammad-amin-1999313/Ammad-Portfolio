@@ -91,7 +91,7 @@ export const projectsData = [
     type: "small",
   },
   {
-    id: 8,
+    id: 9,
     name: "Apen Design — Interactive One-Pager Creator & Visual Page Builder",
     image: apem_image,
     tools: ["HTML",  "CSS", "JS","Responsive Design"],
@@ -101,7 +101,7 @@ export const projectsData = [
     type: "small",
   },
   {
-    id: 9,
+    id: 10,
     name: "Hello Uptown MN",
     image: uptown_image,
     tools: ["Next", "TypeScript","MongoDb","Responsive Design"],
@@ -111,7 +111,7 @@ export const projectsData = [
     type: "large",
   },
   {
-    id: 10,
+    id: 11,
     name: "PromptDesk",
     image: null,
     tools: ["Next", "TypeScript","OpenAI","Responsive Design"],

@@ -25,6 +25,7 @@ const Profile = () => {
               Contact me!!
             </LargeButton>
           </Link>
+          
         </div>
         <div className="px-6 md:px-20 xl:px-0">
           <img className="" src={profile} alt="" />
