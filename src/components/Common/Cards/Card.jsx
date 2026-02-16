@@ -38,7 +38,7 @@ const Card = ({ onpage, layout = "large" }) => {
           {/* Content Section */}
           <div className="flex flex-col flex-grow p-4">
             <h2 className="pb-3 text-2xl font-medium">
-              {wordSize(project.name, 30)}
+              {project.name }
             </h2>
             <p className="text-gray-400 leading-relaxed">
               {project.about}

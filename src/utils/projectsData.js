@@ -1,11 +1,13 @@
 import ballCntrl_Thumbnail from "../assets/images/ballcntrol_Thumbnail.jpg";
-import urban_skillet_logo from "../assets/images/urban_skillet_logo.jpg";
 import Hoobank_thumbnail from "../assets/images/hooThumbnail.png";
 import CarAdvisersThumbnail from "../assets/images/Find your perfect car today.png";
 import ImagenThumbnail from "../assets/images/AI image generation platform showcase.png";
 import Dashboard_thumbnail from "../assets/images/dashborad_thumbnail.png";
 import voyance_thumbnail from "../assets/images/Transform your data, scale business.png"
 import scte_thumbnail from "../assets/images/scte_thumbnail.png"
+import apem_image from "../assets/images/apem-image.PNG"
+import urban_Skillet_thumbnail from "../assets/images/urban-thumbnail.png"
+import uptown_image from "../assets/images/uptown-image.PNG"
 
 export const projectsData = [
   {
@@ -41,7 +43,7 @@ export const projectsData = [
   {
     id: 4,
     name: "Urban Skillet - Halal Burger Experience",
-    image: urban_skillet_logo,
+    image: urban_Skillet_thumbnail,
     tools: ["REACT", "JS", "CSS", "CMS"],
     about: "An end-to-end web platform for a premium halal burger chain. Blending bold 'street-inspired' UI with complex multi-page navigation and location-based services.",
     link: "https://www.urbanskilletla.com/",
@@ -91,11 +93,31 @@ export const projectsData = [
   {
     id: 8,
     name: "Apen Design — Interactive One-Pager Creator & Visual Page Builder",
-    image: scte_thumbnail,
+    image: apem_image,
     tools: ["HTML",  "CSS", "JS","Responsive Design"],
     about: "Apen Design is a modern web platform that enables users to quickly create visually striking one-page designs and infographics without coding. Built with a focus on usability and intuitive workflows, the tool empowers businesses and individuals to communicate ideas effectively through engaging layouts and graphics. With features for design assembly, customizable elements, and seamless publishing, Apen Design helps users build beautiful, responsive pages that captivate audiences and enhance online presence.",
     link: "https://apen-design.vercel.app/",
     code: "https://github.com/ammad-amin-1999313/apen-design",
     type: "small",
+  },
+  {
+    id: 9,
+    name: "Hello Uptown MN",
+    image: uptown_image,
+    tools: ["Next", "TypeScript","MongoDb","Responsive Design"],
+    about: "Discover the best of Uptown Minneapolis with Hello Uptown MN. Explore exclusive coupons, local business directories, upcoming events, and the best happy hours. Your premium guide to luxury salon treatments and community news in the heart of Uptown.",
+    link: "https://hellouptownmn.com/",
+    code:null,
+    type: "large",
+  },
+  {
+    id: 10,
+    name: "PromptDesk",
+    image: null,
+    tools: ["Next", "TypeScript","OpenAI","Responsive Design"],
+    about: "Discover the best of Uptown Minneapolis with Hello Uptown MN. Explore exclusive coupons, local business directories, upcoming events, and the best happy hours. Your premium guide to luxury salon treatments and community news in the heart of Uptown.",
+    link: "https://ai-web-app-8hlh.vercel.app/",
+    code:null,
+    type: "large",
   },
 ];
