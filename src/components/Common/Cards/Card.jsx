@@ -4,9 +4,9 @@ import { AiOutlineDeliveredProcedure } from "react-icons/ai";
 import { projectsData } from "../../../utils/projectsData";
 
 const Card = ({ onpage, layout = "large" }) => {
-  const wordSize = (str, maxLength) => {
-    return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
-  };
+  // const wordSize = (str, maxLength) => {
+  //   return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
+  // };
 
   const displayedProjects =
     onpage === "home" ? projectsData.slice(0, 3) : projectsData;
