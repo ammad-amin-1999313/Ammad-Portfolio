@@ -8,6 +8,7 @@ import scte_thumbnail from "../assets/images/scte_thumbnail.png"
 import apem_image from "../assets/images/apem-image.PNG"
 import urban_Skillet_thumbnail from "../assets/images/urban-thumbnail.png"
 import uptown_image from "../assets/images/uptown-image.PNG"
+import uptowm_Thumbnail from "../assets/images/Uptown deals and savings spotlight.png"
 
 export const projectsData = [
   {
@@ -103,7 +104,7 @@ export const projectsData = [
   {
     id: 10,
     name: "Hello Uptown MN",
-    image: uptown_image,
+    image: uptowm_Thumbnail,
     tools: ["Next", "TypeScript","MongoDb","Responsive Design"],
     about: "Discover the best of Uptown Minneapolis with Hello Uptown MN. Explore exclusive coupons, local business directories, upcoming events, and the best happy hours. Your premium guide to luxury salon treatments and community news in the heart of Uptown.",
     link: "https://hellouptownmn.com/",
