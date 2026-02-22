@@ -1,7 +1,7 @@
 import Hoobank_thumbnail from "../assets/images/hooThumbnail.png";
 import CarAdvisersThumbnail from "../assets/images/Find your perfect car today.png";
 import ImagenThumbnail from "../assets/images/AI image generation platform showcase.png";
-import Dashboard_thumbnail from "../assets/images/dashborad_thumbnail.png";
+import Dashboard_thumbnail from "../assets/images/new_dashboard.png";
 import voyance_thumbnail from "../assets/images/Transform your data, scale business.png"
 import scte_thumbnail from "../assets/images/scte_thumbnail.png"
 import apem_image from "../assets/images/new-apem_thumbnail.png"
@@ -9,6 +9,7 @@ import urban_new_thumbnail from "../assets/images/urban_new_thumbnail.png"
 import new_ballcntrl_thumbnail from "../assets/images/premium-ballcntrl.png"
 import uptowm_Thumbnail from "../assets/images/Uptown deals and savings spotlight.png"
 import Ai_app from "../assets/images/Ai-app.png"
+
 
 export const projectsData = [
   {
