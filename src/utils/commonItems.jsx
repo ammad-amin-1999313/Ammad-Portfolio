@@ -28,3 +28,12 @@ export const funFact = [
 ];
 
 
+export const FooterCopyright = () => {
+  return (
+    <p className="text-white text-center pb-8 text-sm md:text-base font-family">
+      © Copyright {new Date().getFullYear()}. Made by Ammad
+    </p>
+  );
+}
+
+export default FooterCopyright;

@@ -112,15 +112,24 @@ export const projectsData = [
     code: "https://github.com/ammad-amin-1999313/apen-design",
     type: "small",
   },
- 
-  {
+   {
     id: 11,
-    name: "PromptDesk",
-    image: Ai_app,
-    tools: ["Next", "TypeScript","OpenAI","Responsive Design"],
-    about: "Developed a high-performance AI web application designed to streamline content creation and text editing. PromptDesk leverages advanced language models to provide users with a suite of 'one-click' transformations, including professional rewriting, grammar correction, and automated summarization.",
-    link: "https://ai-web-app-8hlh.vercel.app/",
-    code:null,
-    type: "large",
+    name: "EZ.to Personal Page Builder",
+    image: apem_image,
+    tools: ["TypeScript","Next","Tailwind CSS","SupaBase"],
+    about: "EZ.to is a simple, step-by-step personal page builder web app (deployed on Vercel). It helps users quickly create customized personal or brand pages (like link-in-bio, portfolio landing pages, or personal sites). The app features a user-friendly interface with pre-designed templates, drag-and-drop customization, and real-time editing. It also includes options for adding social media links, contact information, and custom sections to create a unique online presence without any coding required.",
+    link: "https://ez-to-custom-builder-app.vercel.app/",
+    code: "https://github.com/ammad-amin-1999313/ez.to.custom.builder.app",
+    type:"large",
+  },
+   {
+    id: 12,
+    name: "Velvet Rose",
+    image: apem_image,
+    tools: ["TypeScript", "Vite","React","Responsive Design"],
+    about: "Velvet Rose is a sleek, elegant web application deployed on Vercel. It appears to be a demo/prototype app showcasing a modern, minimalist design aesthetic. The app likely serves as a portfolio piece or design concept, featuring a clean UI with a focus on typography and visual balance. It may include interactive elements or animations to enhance user engagement while maintaining a sophisticated and polished look.",
+    link: "https://velvet-rose.vercel.app/",
+    code: "https://github.com/ammad-amin-1999313/Velvet-Rose-",
+    type: "small",
   },
 ];

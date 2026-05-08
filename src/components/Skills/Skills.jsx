@@ -23,8 +23,8 @@ const Skills = () => {
             <div className="flex flex-wrap pt-10 xl:pt-0 gap-4 xl:w-[55%]" >
                 {skills.map((skill,index) => (
                     <div className="border-[1px]  font-family  transition-all duration-500 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out  xl:w-[30%] h-[100px]" key={index} >
-                        <h1 className="border-b font-semibold  text-white pl-2" >{skill.name}</h1>
-                        <h1 className="px-2 text-gray-400 pt-4 xl:pt-0 content-center " >{skill.paragraph}</h1>
+                        <h1 className="border-b font-semibold  text-white pl-2" >{skill.shortName || skill.name}</h1>
+                        <h1 className="px-2 text-gray-400 pt-4 xl:pt-0 content-center " >{skill.short}</h1>
                     </div>
                 ))}
             </div>

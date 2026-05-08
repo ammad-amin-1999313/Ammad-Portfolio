@@ -56,13 +56,13 @@ const About = () => {
         <div className="flex flex-wrap gap-4 pb-10 ">
           {skills.map((skill, index) => (
             <div
-              className="border-[1px] font-family   lg:w-[30%] h-[80px] lg:h-[100px]"
+              className="border-[1px] font-family  lg:w-[30%] "
               key={index}
             >
               <h1 className="border-b font-semibold  text-white pl-2">
                 {skill.name}
               </h1>
-              <h1 className="px-2 pt-4  text-gray-400 ">{skill.paragraph}</h1>
+              <h1 className="px-2 py-4  text-gray-400 ">{skill.paragraph}</h1>
             </div>
           ))}
         </div>

@@ -3,6 +3,7 @@ import logo from "../../assets/images/portfolio-logo.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import FooterCopyright from "../../utils/commonItems";
 
 const Footer = () => {
   return (
@@ -48,7 +49,7 @@ const Footer = () => {
       </div>
       {/* ----------- */}
       <div>
-        <p className="font-family text-white xl:size text-center pb-8" >© Copyright 2026. Made by Ammad</p>
+        <FooterCopyright/>
       </div>
     </div>
   );
