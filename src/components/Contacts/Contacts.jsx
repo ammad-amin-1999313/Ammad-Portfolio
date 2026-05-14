@@ -1,18 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa6";
+import Toast from '../Common/Toast/Toast';
 
 
 const Contacts = () => {
-    const copyToClipboard = (text) => {
+    const [toast, setToast] = useState(null);
+
+    const copyToClipboard = (text, label = 'Copied') => {
         navigator.clipboard.writeText(text).then(() => {
-          alert(`Copied to clipboard: ${text}`);
+          setToast(`${label}: ${text}`);
         }).catch(err => {
           console.error('Failed to copy: ', err);
+          setToast('Copy failed — please copy manually.');
         });
       };
   return (
     <div>
+    <Toast message={toast} onClose={() => setToast(null)} />
     <div className='size px-6 md:px-20 xl:px-0 pb-12 xl:pb-24 pt-4' >
     <div className="flex items-center gap-4">
           <div>
@@ -32,15 +37,15 @@ const Contacts = () => {
             </div>
             <div className='border-[1px] mt-8 xl:mt-0 font-family rounded transition-all duration-500 ease-in-out hover:border-[#C778DD] hover:transition-all hover:duration-500 hover:ease-in-out p-4 '>
                 <h4 className='text-white'>Message me here</h4>
-                <span 
-              className='flex gap-2 items-center pt-3 pb-2 cursor-pointer' 
-              onClick={() => copyToClipboard('sardarammad6@gmail.com')}
+                <span
+              className='flex gap-2 items-center pt-3 pb-2 cursor-pointer hover:text-white transition-colors duration-200'
+              onClick={() => copyToClipboard('sardarammad6@gmail.com', 'Email copied')}
             >
               <MdEmail /> sardarammad6@gmail.com
             </span>
-            <span 
-              className='flex gap-2 items-center cursor-pointer' 
-              onClick={() => copyToClipboard('Ammad Amin')}
+            <span
+              className='flex gap-2 items-center cursor-pointer hover:text-white transition-colors duration-200'
+              onClick={() => copyToClipboard('Ammad Amin', 'LinkedIn name copied')}
             >
               <FaLinkedin/> Ammad Amin
             </span>

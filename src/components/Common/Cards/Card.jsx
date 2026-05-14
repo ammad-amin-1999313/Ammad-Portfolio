@@ -32,7 +32,7 @@ const Card = ({ onpage, layout = "large", data, clamp = false }) => {
       {displayedProjects.map((project) => (
         <article
           key={project.id}
-          className={`group flex flex-col w-full md:w-[calc(50%-12px)] ${widthClass} rounded-xl overflow-hidden border border-white/10 bg-white/[0.02] transition-all duration-300 ease-out hover:border-[#C778DD]/60 hover:bg-white/[0.04] hover:-translate-y-1 hover:shadow-[0_12px_30px_-12px_rgba(199,120,221,0.35)]`}
+          className={`group flex flex-col w-full md:w-[calc(50%-12px)] ${widthClass} rounded-xl overflow-hidden border border-white/10 bg-white/[0.02] transform-gpu will-change-transform transition duration-[450ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-[#C778DD]/60 hover:bg-white/[0.04] hover:-translate-y-1.5 hover:shadow-[0_20px_40px_-18px_rgba(199,120,221,0.35)]`}
         >
           {/* Image */}
           <div className="relative w-full aspect-[16/10] overflow-hidden bg-black/30">
@@ -40,9 +40,9 @@ const Card = ({ onpage, layout = "large", data, clamp = false }) => {
               src={project.image}
               alt={project.name}
               loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+              className="w-full h-full object-cover transform-gpu transition-transform duration-[700ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[450ms] ease-out" />
           </div>
 
           {/* Tools (chips) */}

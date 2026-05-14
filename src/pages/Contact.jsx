@@ -4,6 +4,7 @@ import { MdEmail, MdContentCopy } from "react-icons/md";
 import { BsTwitter } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import icons from "../assets/images/project-icon.png";
+import Toast from "../components/Common/Toast/Toast";
 
 const Contact = () => {
   const [toast, setToast] = useState(null);
@@ -29,10 +30,9 @@ const Contact = () => {
     try {
       await navigator.clipboard.writeText(text);
       setToast(`${label}: ${text}`);
-      setTimeout(() => setToast(null), 1500);
     } catch (err) {
       console.error("Failed to copy: ", err);
-      alert("Copy failed. Please copy manually.");
+      setToast("Copy failed — please copy manually.");
     }
   };
 
@@ -85,7 +85,6 @@ const Contact = () => {
     // await navigator.clipboard.writeText(CONTACT.email);
   } finally {
     setSending(false);
-    setTimeout(() => setToast(null), 2200);
   }
 };
 
@@ -124,12 +123,7 @@ const Contact = () => {
         <img src={icons} alt="" />
       </div>
 
-      {/* toast */}
-      {toast && (
-        <div className="fixed top-5 right-5 z-[60] bg-black/70 border border-white/15 text-white px-4 py-2 rounded-lg backdrop-blur">
-          <span className="text-sm">{toast}</span>
-        </div>
-      )}
+      <Toast message={toast} onClose={() => setToast(null)} />
 
       <div className="size">
         {/* Header */}
